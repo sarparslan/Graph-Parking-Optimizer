@@ -1,25 +1,49 @@
 # Graph-Parking-Optimizer
-In Esenboğa airport, there is a parking facility which is in the form of a graph having N
-nodes and M edges. The graph does not have self-loops or multiple edges. Each node represents a
-parking slot and has a capacity of vehicles it can hold. Each edge has a weight of w, which indicates
-that it will cost w units to go from node u to node v. All parking slots have a parking fee F per
-vehicle, which is same for all slots.
-There are K identical vehicles entering the parking facility, each vehicle enumerated with
-a distinct number from 1 to K. The vehicles enter in their natural order, that is, vehicle number 1
-enters, then vehicle number 2, then 3 and so on till vehicle number K. For each vehicle, you have
-to print the minimum total cost that is incurred on the vehicle owner. Here, total cost includes cost
-of the path taken to reach the parking slot and parking fee of the slot. It is guaranteed that you
-can reach any slot from any other slot. All vehicles entering the parking facility enter from the
-parking slot 1.
 
-In the input, the first line contains 3 space separated integers, N, M and F. N denotes the
-number of nodes, M denotes the number of edges and F denotes the parking fee. The second line
-consists of N space separated integers denoting the seating capacity of each parking slot. Following
-M lines contain three space separated integers each: u, v and w, denoting we can reach from node
-u to node v incurring a cost of w units. The last line of input contains an integer K denoting the
-number of vehicles enter the parking facility.
-In the first line it is given that we have 5 parking slots, 4 connections between the parking
-slots and 10 as parking fee which is the base fee for each car enters the parking facility. In the
-second line, we have 5 parking slots with their capacity which are 1, 2, 1, 1, and 2. In the next 4
-lines, the distance between these parking slots is given and the number of vehicles will be entering
-the parking facility is 5. You need to give the total cost each car enters the facility.
+This Java program is designed for an Airport parking facility, which is represented as a graph with N nodes and M edges. The program calculates the minimum total cost for K identical vehicles entering the parking facility, considering the capacity of parking slots, edge weights, and parking fees.
+
+
+At the Airport, there is a parking facility represented as a graph with N nodes, each node representing a parking slot. Each parking slot has a capacity for holding vehicles. Vehicles enter the parking facility in natural order, and for each vehicle, the program calculates the minimum total cost incurred by the vehicle owner. The total cost includes the cost of the path taken to reach the parking slot and the parking fee for the slot.
+
+## Features
+
+- Calculation of the minimum total cost for vehicles entering the parking facility.
+- Consideration of parking slot capacity, edge weights, and parking fees.
+- Support for multiple test cases and customizable parking facility parameters.
+- Clear and extensible Java codebase.
+
+## Getting Started
+
+1. Clone this repository to your local machine.
+
+2. Compile and run the Java program using your preferred Java development environment.
+
+3. Follow the prompts to input the necessary parameters and calculate the minimum total cost for vehicles.
+
+## Usage
+
+To use the the Airport Parking Cost Calculator, follow these steps:
+
+1. Run the Java program.
+
+2. Enter the number of nodes (parking slots), number of edges (connections), and parking fee (F).
+
+3. Provide the seating capacity for each parking slot and specify the distance (weight) between parking slots.
+
+4. Enter the number of vehicles (K) entering the parking facility.
+
+5. The program will calculate and display the minimum total cost for each vehicle entering the facility.
+
+## Input Format
+
+The input format includes the following:
+
+- The number of nodes (N), number of edges (M), and parking fee (F).
+- The seating capacity of each parking slot.
+- For each edge, the source node (u), destination node (v), and edge weight (w).
+- The number of vehicles (K) entering the parking facility.
+
+## Output Format
+
+The program calculates and displays the minimum total cost for each vehicle entering the  Airport parking facility. It also provides additional information about the analysis.
+
