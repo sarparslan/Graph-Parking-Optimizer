@@ -1,9 +1,15 @@
 # Graph-Parking-Optimizer
 
-This Java program is designed for an Airport parking facility, which is represented as a graph with N nodes and M edges. The program calculates the minimum total cost for K identical vehicles entering the parking facility, considering the capacity of parking slots, edge weights, and parking fees.
 
+Welcome to the Esenboğa Airport Parking Facility repository! This project is designed to help manage the parking slots at Esenboğa Airport, which is represented as a graph with N nodes and M edges. Each node represents a parking slot with a capacity for vehicles, and each edge has a weight (w) representing the cost to travel between parking slots. Additionally, there is a parking fee (F) per vehicle, which is the same for all slots.
 
-At the Airport, there is a parking facility represented as a graph with N nodes, each node representing a parking slot. Each parking slot has a capacity for holding vehicles. Vehicles enter the parking facility in natural order, and for each vehicle, the program calculates the minimum total cost incurred by the vehicle owner. The total cost includes the cost of the path taken to reach the parking slot and the parking fee for the slot.
+## Problem Statement
+
+At Esenboğa Airport, there is a parking facility in the form of a graph with N nodes and M edges. The graph does not have self-loops or multiple edges. Each node represents a parking slot with a capacity for vehicles. Each edge has a weight (w), indicating the cost to go from node u to node v. All parking slots have a parking fee (F) per vehicle, which is the same for all slots.
+
+There are K identical vehicles entering the parking facility, each numbered from 1 to K. The vehicles enter in their natural order, with vehicle number 1 entering first, followed by vehicle number 2, and so on until vehicle number K. For each vehicle, you need to calculate and print the minimum total cost incurred by the vehicle owner. The total cost includes the cost of the path taken to reach the parking slot and the parking fee for the slot.
+
+It is guaranteed that you can reach any slot from any other slot. All vehicles entering the parking facility start from parking slot 1.
 
 ## Features
 
@@ -36,14 +42,33 @@ To use the the Airport Parking Cost Calculator, follow these steps:
 
 ## Input Format
 
-The input format includes the following:
+In the input, the first line contains 3 space separated integers, N, M and F. N denotes the
+number of nodes, M denotes the number of edges and F denotes the parking fee.
 
-- The number of nodes (N), number of edges (M), and parking fee (F).
-- The seating capacity of each parking slot.
-- For each edge, the source node (u), destination node (v), and edge weight (w).
-- The number of vehicles (K) entering the parking facility.
+The second line
+consists of N space separated integers denoting the seating capacity of each parking slot. Following
+M lines contain three space separated integers each: u, v and w, denoting we can reach from node
+u to node v incurring a cost of w units. 
+
+The last line of input contains an integer K denoting the
+number of vehicles enter the parking facility.
+
+
+In the first line it is given that we have 5 parking slots, 4 connections between the parking
+slots and 10 as parking fee which is the base fee for each car enters the parking facility. In the
+second line, we have 5 parking slots with their capacity which are 1, 2, 1, 1, and 2. In the next 4
+lines, the distance between these parking slots is given and the number of vehicles will be entering
+the parking facility is 5. Program  gives the total cost each car enters the facility.
+
+
+<img width="679" alt="Screenshot 2023-11-06 at 20 34 49" src="https://github.com/sarparslan/Graph-Parking-Optimizer/assets/96438389/77892391-a2c2-453c-b5e2-14e4840b16b1">
+
 
 ## Output Format
 
-The program calculates and displays the minimum total cost for each vehicle entering the  Airport parking facility. It also provides additional information about the analysis.
+In the output, program prints K space separated integers denoting answer for each vehicle. ith integer
+in the space separated integers denotes answer for ith vehicle number. If it is not possible to enter
+a parking slot print −1 for that vehicle.
+
+<img width="679" alt="Screenshot 2023-11-06 at 20 35 04" src="https://github.com/sarparslan/Graph-Parking-Optimizer/assets/96438389/da60ffaf-632a-4154-96cd-06d9df6c3842">
 
